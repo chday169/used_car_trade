@@ -4,17 +4,80 @@
   <meta charset="UTF-8">
   <title>首頁 - 漢新二手車</title>
   <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome 圖示庫 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    /* 可保留於此或搬到 css/style.css */
+    body {
+      font-family: "Segoe UI", "微軟正黑體", sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
     .site-notice {
       background: #fff7cc;
       border: 1px solid #e6cf57;
       color: #664d03;
       padding: 12px 16px;
-      margin: 16px 0;
+      margin: 16px auto;
       border-radius: 6px;
       font-weight: 600;
       text-align: center;
+      max-width: 800px;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+      border-radius: 8px;
+    }
+
+    ul li {
+      margin: 8px 0;
+      font-size: 1.1em;
+    }
+
+    ul li i {
+      margin-right: 8px;
+      color: #007bff;
+    }
+
+    .car-item {
+      border: 1px solid #ccc;
+      padding: 16px;
+      border-radius: 8px;
+      margin-top: 16px;
+      background-color: #f0f8ff;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .banner img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 20px;
     }
   </style>
 </head>
@@ -22,15 +85,19 @@
   <header>
     <h1>歡迎來到漢新二手車</h1>
     <nav>
-      <a href="/used_car_trade/index.html">首頁</a> |
-      <a href="/used_car_trade/cars.html">車輛列表</a> |
-      <a href="/used_car_trade/contact.html">聯絡我們</a> |
-      <a href="/used_car_trade/partners.html">協力廠商</a>
+      <a href="/used_car_trade/index.html"><i class="fas fa-home"></i> 首頁</a> |
+      <a href="/used_car_trade/cars.html"><i class="fas fa-car"></i> 車輛列表</a> |
+      <a href="/used_car_trade/contact.html"><i class="fas fa-phone"></i> 聯絡我們</a> |
+      <a href="/used_car_trade/partners.html"><i class="fas fa-handshake"></i> 協力廠商</a>
     </nav>
   </header>
 
   <main>
     <div class="site-notice">這是網頁測試，尚未開始營業。</div>
+
+    <section class="banner">
+      <img src="images/banner.jpg" alt="漢新二手車橫幅">
+    </section>
 
     <section>
       <h2>關於我們</h2>
@@ -40,15 +107,15 @@
     <section>
       <h2>營業項目</h2>
       <ul>
-        <li>舊車買賣</li>
-        <li>舊車免費估價服務</li>
-		<li>車輛貸款服務</li>
-        <li>國外商旅接送及導覽(Benz2000）</li>
-		<li>代客購買汽機車零件</li>
-        <li>定期到府洗車美容</li>
-        <li>代辦汽機車過戶</li>
-        <li>代客汽車送檢及檢修</li>
-        <li>酒後或旅遊代駕</li>
+        <li><i class="fas fa-car"></i> 舊車買賣</li>
+        <li><i class="fas fa-search-dollar"></i> 舊車免費估價服務</li>
+        <li><i class="fas fa-file-invoice-dollar"></i> 車輛貸款服務</li>
+        <li><i class="fas fa-plane-arrival"></i> 國外商旅接送及導覽(Benz2000）</li>
+        <li><i class="fas fa-tools"></i> 代客購買汽機車零件</li>
+        <li><i class="fas fa-shower"></i> 定期到府洗車美容</li>
+        <li><i class="fas fa-file-signature"></i> 代辦汽機車過戶</li>
+        <li><i class="fas fa-wrench"></i> 代客汽車送檢及檢修</li>
+        <li><i class="fas fa-car-side"></i> 酒後或旅遊代駕</li>
       </ul>
     </section>
 
@@ -71,6 +138,9 @@
 
   <footer>
     <p>&copy; 2025 漢新二手車專賣</p>
+    <p><i class="fas fa-phone-alt"></i> 電話：02-1234-5678</p>
+    <p><i class="fas fa-envelope"></i> 信箱：service@hanxin-cars.tw</p>
+    <p><i class="fas fa-map-marker-alt"></i> 地址：新北市新店區安康路123號</p>
   </footer>
 </body>
 </html>
